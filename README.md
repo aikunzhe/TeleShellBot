@@ -1,7 +1,8 @@
 # TeleShellBot
 
 A simple Telegram Bot to run shell commands remotely, so that you can maintain your server from mobile phones!
-![demo](https://cdn.jsdelivr.net/gh/marknote/TeleShellBot/screens/demo.gif)
+![demo](https://cdn.jsdelivr.net/gh/aikunzhe/TeleShellBot/screens/demo.gif)
+![tdl](https://cdn.jsdelivr.net/gh/aikunzhe/TeleShellBot/screens/tdl.jpg)
 
 ## Install-docker
 1. 下载本项目
