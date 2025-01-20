@@ -12,7 +12,6 @@ A simple Telegram Bot to run shell commands remotely, so that you can maintain y
 3. ```docker build -t tgbot .```
 4. 启动容器：
     - 三个代理地址可以不填写，只要保证自己的网络环境畅通
-    - 最后一个映射可以不写，主要是为了调试方便
 ```
 docker run -d \
   --restart=always \
@@ -24,7 +23,6 @@ docker run -d \
   -e TDL_PROXY=0.0.0.0:2017 \
   -v /宿主机/.tdl:/root/.tdl \
   -v /宿主机/downloads:/downloads \
-  -v /本项目的路径:/app/exec \
   tgbot
 ```
 
