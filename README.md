@@ -9,7 +9,7 @@ A simple Telegram Bot to run shell commands remotely, so that you can maintain y
 2. 修改config.js
     - [获取USER_ID](https://medium.com/@tabul8tor/how-to-find-your-telegram-user-id-6878d54acafa)
     - 创建一个机器人 [Telegram instructions](https://telegram.org/blog/bot-revolution)
-3. docker build -t tgbot .
+3. ```docker build -t tgbot .```
 4. 启动容器：
     - 三个代理地址可以不填写，只要保证自己的网络环境畅通
     - 最后一个映射可以不写，主要是为了调试方便
