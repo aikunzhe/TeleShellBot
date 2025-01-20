@@ -4,7 +4,7 @@ A simple Telegram Bot to run shell commands remotely, so that you can maintain y
 ![demo](https://cdn.jsdelivr.net/gh/aikunzhe/TeleShellBot/screens/demo.gif)
 ![tdl](https://cdn.jsdelivr.net/gh/aikunzhe/TeleShellBot/screens/tdl.jpg)
 
-## Install-docker
+# docker版本
 1. 下载本项目
 2. 修改config.js
     - [获取USER_ID](https://medium.com/@tabul8tor/how-to-find-your-telegram-user-id-6878d54acafa)
@@ -28,6 +28,7 @@ docker run -d \
   tgbot
 ```
 
+# 普通版
 ## Install
 Download or clone this repo, then
 ```
