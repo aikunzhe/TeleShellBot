@@ -35,7 +35,11 @@ bot.on('text', (msg) => {
 
   if (shell) {
     shell.stdout.on('data', (data) => {
-      msg.reply.text(`stdout:\n ${data}`);
+      if(data.indexOf("Goroutines") != -1){
+            //兼容tdl下载时，一直会弹出进度信息
+        } else{
+            msg.reply.text(`stdout:\n ${data}`);
+        }
     });
 
     shell.stderr.on('data', (data) => {
