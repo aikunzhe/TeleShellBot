@@ -12,13 +12,21 @@ bot.on('text', (msg) => {
     msg.reply.text('You are not admin!');
     return;
   }
+
+  if(msg.text.startsWith('https://t.me')){
+    tmp = msg.text.split(' ');
+    //拼接出原始路径 ./tdl dl -u https://t.me/xxxxxxx -d /download/xxxxxx --reconnect-timeout 0
+    msg.text = './tdl dl -u '+tmp[0]+' -d /download/'+tmp[1]+' --reconnect-timeout 0';
+  }
+
   const words = msg.text.split(' ');
   const len = words.length;
   let args = [];
   if (len > 1) {
     args = words.slice(1, len);
   }
-  console.log('args:' + args);
+
+  console.log('msg.text(整体命令):' + msg.text);
 
   const shell = spawn(words[0], args).on('error', (err) => {
     msg.reply.text('error while executing:' + words[0]);
